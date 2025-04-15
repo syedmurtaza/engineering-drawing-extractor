@@ -1,0 +1,13 @@
+services:
+  pdf-extractor:
+    container_name: pdf_extractor
+    build: .
+    volumes:
+      - "${PWD}/engineering_drawings:/app/engineering_drawings"
+      - "${PWD}/pdfs:/app/engineering_drawings/pdfs"
+      - "${PWD}/output:/app/engineering_drawings/output"
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: /bin/bash
+    stdin_open: true
+    tty: true

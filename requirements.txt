@@ -1,0 +1,7 @@
+# requirements.txt
+PyMuPDF==1.23.8
+Pillow==10.2.0
+pytesseract==0.3.10
+pandas
+openpyxl
+opencv-python
